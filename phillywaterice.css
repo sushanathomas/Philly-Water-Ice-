@@ -1,0 +1,512 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+Clear fix hack .clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+header,
+footer {
+  width: 100%;
+  clear: both;
+}
+h1 h2 h3 {
+  font-family: "Titan One", sans-serif;
+}
+/*
+  ========================================
+  HEADER
+  ========================================
+*/
+header {
+  height: auto;
+  background: rgb(197, 51, 86);width: 100%;
+  max-width: 100%;
+}
+.top-header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.top-header h2 {
+  width: 50%;
+  margin-left: 10%;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  padding: 10px;
+}
+.top-header nav {
+  width: 50%;
+  padding: 10px;
+}
+.top-header ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: bold;
+  list-style: none;
+}
+.top-header a {
+  color: white;
+  text-decoration: none;
+}
+.top-header button {
+  background: rgb(243, 203, 66);
+  color: white;
+  border: 2px solid rgb(243, 203, 66);
+  border-radius: 30px;
+  width: 130px;
+}
+header p {
+  width: 100%;
+  text-align: center;
+  background: rgb(243, 203, 66);
+  font-size: 12px;
+  height: auto;
+  padding: 10px 0;
+}
+/*
+  ========================================
+  Main
+  ========================================
+*/
+main {
+  height: auto;
+  padding: 80px;
+  background-image: linear-gradient(
+  rgba(80, 10, 35, 0.65),rgba(80, 10, 35, 0.65)), url(philly-waterice.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.delicious {
+  width: 70%;
+}
+.delicious span {
+  color: rgb(243, 203, 66);
+  font-size: 10px;
+  font-weight: bolder;
+  word-spacing: 5px;
+}
+.delicious h1 {
+  font-size: 70px;
+  color: white;
+  font-weight: 1000;
+  line-height: 1;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.delicious p {
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+.bottomUp {
+  margin-bottom: 20px;
+  width: 40%;
+  display: flex;
+  gap: 15px;
+  min-width: 600px; 
+}
+.top {
+  background: rgb(243, 203, 66);
+  border: 2px solid rgb(243, 203, 66);
+  border-radius: 30px;
+  color: black;
+  width: 145px;
+  font-weight: bold;
+
+}
+.bottom {
+  background: rgb(107, 45, 67);
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  width: 145px;
+  height: 45px;
+  font-weight: bold;
+}
+#pound {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* 
+  ========================================
+  Section 1 - upOne
+  ========================================
+ */
+.upOne {
+  height: auto;
+  background: rgb(253, 247, 237);
+  padding: 80px;
+}
+.downOne span {
+  color: rgb(196, 44, 82);
+  font-size: 10px;
+  font-weight: bolder;
+  word-spacing: 12px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.downOne h2 {
+  color: rgb(46, 33, 46);
+  margin-top: 5px;
+  font-weight: 1000;
+  font-size: 36px;
+  line-height: 1;
+  max-width: 500px;
+}
+
+.downOne p {
+  color: rgb(169, 157, 162);
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.twoUp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.twoUp section {
+  width: calc(25% - 20px);
+  border-radius: 12px;
+  min-height: 140px;
+  background: white;
+  padding: 20px;
+}
+
+.twoUp h3 {
+  color: rgb(46, 33, 46);
+  font-size: 18px;
+  font-weight: 900;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.twoUp p {
+  color: rgb(146, 133, 145);
+  font-size: 12px;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.upOne p {
+  margin-top: 8px;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.upOne strong {
+  background: rgb(243, 203, 66);
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 14px;
+}
+#cherry {
+  border-top: 6px solid rgb(196, 44, 82);
+}
+
+#lemon {
+  border-top: 6px solid rgb(243, 203, 66);
+}
+
+#raspberry {
+  border-top: 6px solid rgb(90, 157, 217);
+}
+
+#mango {
+  border-top: 6px solid rgb(232, 147, 63);
+}
+
+#cottonCandy {
+  border-top: 6px solid rgb(172, 115, 255)
+}
+/* 
+  ========================================
+  Section 2 - blueBottom
+  ========================================
+ */
+.blueBottom {
+  height: auto;
+  padding: 80px;
+  background: rgb(171, 224, 241);
+}
+.blueBottom span {
+  color: rgb(196, 44, 82);
+  font-size: 12px;
+  font-weight: 900;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+.blueBottom h2 {
+  color: rgb(46, 33, 46);
+  margin-top: 7px;
+  font-weight: 1000;
+  font-size: 36px;
+  line-height: 1;
+  max-width: 500px;
+}
+.bikiniBottom {
+  display: flex;
+  margin-top: 20px;
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.bikiniBottom section {
+  background: white;
+  width: calc(25% - 15px);
+  border-radius: 12px;
+  min-height: 140px;
+  padding: 20px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.bikiniBottom h3 {
+  color: rgb(46, 33, 46);
+  font-size: 18px;
+  font-weight: 900;
+  align-items: center;
+   max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.bikiniBottom span {
+  font-weight: 1000;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.bikiniBottom p {
+  color: rgb(146, 133, 145);
+  font-size: 10px;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.gelati {
+  color: rgb(46, 33, 46);
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*
+  ========================================
+  Section 3 - italy
+  ========================================
+*/
+.italy {
+  background: rgb(253, 247, 237);
+  height: auto;
+  padding: 80px;
+}
+
+.italy span {
+  color: rgb(196, 44, 82);
+  font-size: 12px;
+  font-weight: 900;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.italy h2 {
+  color: rgb(46, 33, 46);
+  margin-top: 7px;
+  font-weight: 1000;
+  font-size: 36px;
+  line-height: 1;
+  max-width: 500px;
+}
+
+.margherita {
+  display: flex;
+  margin-top: 20px;
+  ;
+  gap: 12px;
+}
+
+.margherita section {
+  background: white;
+  width: 34.33%;
+  border-radius: 12px;
+  min-height: 100px;
+  padding: 20px;
+}
+
+.margherita h3 {
+  color: rgb(196, 44, 82);
+  font-size: 18px;
+  font-weight: 900;
+  align-items: center;
+}
+
+.margherita p {
+  color: rgb(46, 33, 46);
+  font-size: 12px;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.cashOnly {
+  background: rgb(243, 203, 66);
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.margherita a {
+  color: rgb(196, 44, 82);
+  font-weight: bold;
+}
+
+.pizza {
+  line-height: 1;
+}
+
+/*
+  ========================================
+  Footer 
+  ========================================
+*/
+
+footer {
+  height: auto;
+  padding: 80px;
+  background: rgb(46, 33, 46);
+}
+
+.footerPage {
+  display: flex;
+  border-bottom: 1px solid rgb(253, 247, 237);
+}
+
+.footerPage section {
+  flex: 1;
+  color: rgb(196, 44, 82);
+  align-items: center;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+.footerPage h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.footerPage p {
+  color: white;
+  font-size: 12px;
+}
+
+.footerPage a {
+  color: white;
+}
+
+.footerBump {
+  display: flex;
+  margin: 25px;
+}
+
+.footerBump p {
+  flex: 1;
+  font-size: 10px;
+  color: white;
+}
+
+.footerBump #underline {
+  text-decoration: underline;
+}
+
+/*
+  ========================================
+  Media Query
+  ========================================
+*/
+
+/* Laptop Screen Size */
+
+@media screen and (max-width: 1024px) {
+  .upOne, .italy{
+    background: rgb(230, 195, 68); 
+  }
+  .blueBottom{
+    background: rgb(194, 224, 243); 
+  }
+  footer{
+    background: rgb(194, 224, 243);
+  }
+}
+
+/* Table Screen */
+
+@media screen and (max-width: 768px) {
+  
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+  
+  .upOne, .italy{
+    background: rgb(194, 224, 243); 
+  }
+  .blueBottom{
+    background: rgb(107, 45, 67); 
+  }
+  footer{
+    background: rgb(107, 45, 67); 
+  }
+}
+
+
+/* Mobile Screen */
+
+@media screen and (max-width: 600px) {
+  
+  header nav {
+    display: none;
+  }
+  .bottomUp{
+    display: none;
+  }
+  .upOne, .italy{
+    background: rgb(107, 45, 67); 
+  }
+  .blueBottom{
+    background: rgb(251, 246, 235); 
+  }
+  footer{
+    background: rgb(194, 224, 243);
+  }
+}
+
+
+
+
