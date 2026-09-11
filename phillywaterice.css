@@ -2,8 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  clear: both;
 }
+
 Clear fix hack .clearfix:after {
   content: ".";
   display: block;
@@ -12,17 +12,23 @@ Clear fix hack .clearfix:after {
   line-height: 0;
   height: 0;
 }
+
 body {
   font-family: "Nunito", sans-serif;
 }
+
 header,
 footer {
   width: 100%;
   clear: both;
 }
-h1 h2 h3 {
-  font-family: "Titan One", sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: "Titan One", sans-serif;
 }
+
 /*
   ========================================
   HEADER
@@ -30,14 +36,17 @@ h1 h2 h3 {
 */
 header {
   height: auto;
-  background: rgb(197, 51, 86);width: 100%;
+  background: rgb(197, 51, 86);
+  width: 100%;
   max-width: 100%;
 }
+
 .top-header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
+
 .top-header h2 {
   width: 50%;
   margin-left: 10%;
@@ -46,10 +55,12 @@ header {
   color: white;
   padding: 10px;
 }
+
 .top-header nav {
   width: 50%;
   padding: 10px;
 }
+
 .top-header ul {
   display: flex;
   justify-content: space-around;
@@ -57,10 +68,12 @@ header {
   font-weight: bold;
   list-style: none;
 }
+
 .top-header a {
   color: white;
   text-decoration: none;
 }
+
 .top-header button {
   background: rgb(243, 203, 66);
   color: white;
@@ -68,6 +81,7 @@ header {
   border-radius: 30px;
   width: 130px;
 }
+
 header p {
   width: 100%;
   text-align: center;
@@ -76,6 +90,7 @@ header p {
   height: auto;
   padding: 10px 0;
 }
+
 /*
   ========================================
   Main
@@ -84,21 +99,23 @@ header p {
 main {
   height: auto;
   padding: 80px;
-  background-image: linear-gradient(
-  rgba(80, 10, 35, 0.65),rgba(80, 10, 35, 0.65)), url(philly-waterice.png);
+  background-image: linear-gradient(rgba(80, 10, 35, 0.65), rgba(80, 10, 35, 0.65)), url(philly-waterice.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .delicious {
   width: 70%;
 }
+
 .delicious span {
   color: rgb(243, 203, 66);
   font-size: 10px;
   font-weight: bolder;
   word-spacing: 5px;
 }
+
 .delicious h1 {
   font-size: 70px;
   color: white;
@@ -107,19 +124,22 @@ main {
   margin-top: 15px;
   margin-bottom: 20px;
 }
+
 .delicious p {
   color: white;
   line-height: 1.5;
   margin-bottom: 20px;
   font-weight: lighter;
 }
+
 .bottomUp {
   margin-bottom: 20px;
   width: 40%;
   display: flex;
   gap: 15px;
-  min-width: 600px; 
+  min-width: 600px;
 }
+
 .top {
   background: rgb(243, 203, 66);
   border: 2px solid rgb(243, 203, 66);
@@ -129,6 +149,7 @@ main {
   font-weight: bold;
 
 }
+
 .bottom {
   background: rgb(107, 45, 67);
   border: 2px solid white;
@@ -138,10 +159,12 @@ main {
   height: 45px;
   font-weight: bold;
 }
+
 #pound {
   font-size: 12px;
   font-weight: bold;
 }
+
 /* 
   ========================================
   Section 1 - upOne
@@ -152,6 +175,7 @@ main {
   background: rgb(253, 247, 237);
   padding: 80px;
 }
+
 .downOne span {
   color: rgb(196, 44, 82);
   font-size: 10px;
@@ -226,6 +250,7 @@ main {
   font-weight: 900;
   font-size: 14px;
 }
+
 #cherry {
   border-top: 6px solid rgb(196, 44, 82);
 }
@@ -245,6 +270,7 @@ main {
 #cottonCandy {
   border-top: 6px solid rgb(172, 115, 255)
 }
+
 /* 
   ========================================
   Section 2 - blueBottom
@@ -255,6 +281,7 @@ main {
   padding: 80px;
   background: rgb(171, 224, 241);
 }
+
 .blueBottom span {
   color: rgb(196, 44, 82);
   font-size: 12px;
@@ -262,6 +289,7 @@ main {
   word-spacing: 10px;
   letter-spacing: 2px;
 }
+
 .blueBottom h2 {
   color: rgb(46, 33, 46);
   margin-top: 7px;
@@ -270,6 +298,7 @@ main {
   line-height: 1;
   max-width: 500px;
 }
+
 .bikiniBottom {
   display: flex;
   margin-top: 20px;
@@ -278,6 +307,7 @@ main {
   max-width: 100%;
   min-width: 0;
 }
+
 .bikiniBottom section {
   background: white;
   width: calc(25% - 15px);
@@ -293,7 +323,7 @@ main {
   font-size: 18px;
   font-weight: 900;
   align-items: center;
-   max-width: 100%;
+  max-width: 100%;
   overflow-wrap: break-word;
 }
 
@@ -454,13 +484,17 @@ footer {
 /* Laptop Screen Size */
 
 @media screen and (max-width: 1024px) {
-  .upOne, .italy{
-    background: rgb(230, 195, 68); 
+
+  .upOne,
+  .italy {
+    background: rgb(230, 195, 68);
   }
-  .blueBottom{
-    background: rgb(194, 224, 243); 
+
+  .blueBottom {
+    background: rgb(194, 224, 243);
   }
-  footer{
+
+  footer {
     background: rgb(194, 224, 243);
   }
 }
@@ -468,45 +502,153 @@ footer {
 /* Table Screen */
 
 @media screen and (max-width: 768px) {
-  
+
   header ul {
     flex-direction: column;
     align-items: flex-start;
-    }
-  
-  .upOne, .italy{
-    background: rgb(194, 224, 243); 
   }
-  .blueBottom{
-    background: rgb(107, 45, 67); 
+
+  .upOne,
+  .italy {
+    background: rgb(194, 224, 243);
   }
-  footer{
-    background: rgb(107, 45, 67); 
+
+  .blueBottom {
+    background: rgb(107, 45, 67);
+  }
+
+  footer {
+    background: rgb(107, 45, 67);
   }
 }
 
 
 /* Mobile Screen */
 
+/* Mobile Screen */
+
 @media screen and (max-width: 600px) {
-  
+
+  /* ---------------- HEADER ---------------- */
+
   header nav {
     display: none;
   }
-  .bottomUp{
+
+  .top-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .top-header h2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  /* ---------------- MAIN ---------------- */
+
+  main {
+    padding: 40px 20px;
+  }
+
+  .delicious {
+    width: 100%;
+  }
+
+  .delicious h1 {
+    font-size: 42px;
+  }
+
+  .bottomUp {
     display: none;
+    min-width: 0;
   }
-  .upOne, .italy{
-    background: rgb(107, 45, 67); 
+
+
+  /* ---------------- FLAVORS ---------------- */
+
+  .upOne {
+    background: rgb(107, 45, 67);
+    padding: 40px 20px;
   }
-  .blueBottom{
-    background: rgb(251, 246, 235); 
+
+  .downOne h2 {
+    font-size: 30px;
   }
-  footer{
+
+  .twoUp {
+    flex-direction: column;
+  }
+
+  .twoUp section {
+    width: 100%;
+    min-height: auto;
+  }
+
+
+  /* ---------------- SIZES ---------------- */
+
+  .blueBottom {
+    background: rgb(251, 246, 235);
+    padding: 40px 20px;
+  }
+
+  .blueBottom h2 {
+    font-size: 30px;
+  }
+
+  .bikiniBottom {
+    flex-direction: column;
+  }
+
+  .bikiniBottom section {
+    width: 100%;
+    min-height: auto;
+  }
+
+
+  /* ---------------- FIND THE STAND ---------------- */
+
+  .italy {
+    background: rgb(107, 45, 67);
+    padding: 40px 20px;
+  }
+
+  .italy h2 {
+    font-size: 30px;
+  }
+
+  .margherita {
+    flex-direction: column;
+  }
+
+  .margherita section {
+    width: 100%;
+    min-height: auto;
+  }
+
+
+  /* ---------------- FOOTER ---------------- */
+
+  footer {
     background: rgb(194, 224, 243);
+    padding: 40px 20px;
+  }
+
+  .footerPage {
+    flex-direction: column;
+  }
+
+  .footerPage section {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .footerBump {
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 10px;
   }
 }
-
-
-
-
